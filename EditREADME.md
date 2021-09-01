@@ -1,4 +1,3 @@
-邮件内容区开始>
 ## 新{{new_num}}文章--生产时间 {{ga_rss_datetime}} 保质期24小时
 {{news}}
 
@@ -8,19 +7,10 @@
 | 编号 | 名称 | 描述 | RSS  |  最新内容 |
 | --- | --- | --- | --- |  --- |
 | <h2 id="微博&Hacker">微博&Hacker&B站</h2> |  |   |  |
-| A001 | Paul Graham  | -- | {{latest_content}}  |  [订阅地址](http://www.aaronsw.com/2002/feeds/pgessays.rss) |
-| A001 | Poems For U  | -- | {{latest_content}}  |  [订阅地址](http://rsshub-chi-six.vercel.app/weibo/user/5668580668) | 
 | A002 | 亭林镇 | -- | {{latest_content}}  |  [订阅地址](http://rsshub-chi-six.vercel.app/weibo/user/2577139143) | 
-| A003 | HackerNews comment | -- | {{latest_content}}  |  [订阅地址](http://rsshub-chi-six.vercel.app/hackernews/best/comments) | 
-| A004 | HackerNews stories | -- | {{latest_content}}  |  [订阅地址](http://rsshub-chi-six.vercel.app/hackernews/best/stories) | 
-| A005 | 韩寒的马达加斯加 | -- | {{latest_content}}  |  [订阅地址](rsshub-chi-six.vercel.app/weibo/user/3030975747) | 
 | A006 | 王垠 | -- | {{latest_content}}  |  [订阅地址](http://rsshub-chi-six.vercel.app/weibo/user/6347862377) | 
-| A007 | b站热榜 | -- | {{latest_content}}  |  [订阅地址](rsshub-chi-six.vercel.app/bilibili/ranking/0/3?limit=10) | 
-| A008 | dcard funny | -- | {{latest_content}}  |  [订阅地址](rsshub-chi-six.vercel.app/dcard/funny/popular) | 
-| A009 | pinlei榜 | -- | {{latest_content}}  |  [订阅地址](rsshub-chi-six.vercel.app/smzdm/ranking/pinlei/11/3) | 
 | A010 | life hacker | -- | {{latest_content}}  |  [订阅地址](http://lifehacker.com/rss) | 
 | A011 | Sam Altman | -- | {{latest_content}}  |  [订阅地址](https://blog.samaltman.com/posts.atom) | 
-| A012 | 一亩三分地-热门 | -- | {{latest_content}}  |  [订阅地址](http://rsshub-chi-six.vercel.app/1point3acres/post/hot) |
 | <h2 id="活着的个人独立博客">活着的个人独立博客</h2> |  |   |  |
 | <div id="B001" style="text-align: center;"><img src="./_media/favicon/B001.png" width="30px" style="width:30px;height: auto;"/><br><span>B001</span></div> |  阮一峰的网络日志 | 一个科技博客，讲解的知识通俗易懂 |  {{latest_content}} | [订阅地址](http://www.ruanyifeng.com/blog/atom.xml) |
 | <div id="B002" style="text-align: center;"><img src="./_media/favicon/B002.png" width="30px" style="width:30px;height: auto;"/><br><span>B002</span></div> | 当我在扯淡 | 王垠的博客，观点奇妙有趣 |  {{latest_content}} | [订阅地址](https://yinwang1.wordpress.com/feed/) |
@@ -81,18 +71,6 @@
 | D002 | 数字尾巴 | 分享美好数字生活 | {{latest_content}}  |  [订阅地址](https://www.dgtle.com/rss/dgtle.xml) | 
 | D003 | Chiphell  | 分享与交流用户体验 | {{latest_content}}  |  [订阅地址](https://www.chiphell.com/portal.php?mod=rss)  | 
 | D004 | 创事记  | 新浪科技 | {{latest_content}}  |  [订阅地址](http://tech.sina.com.cn/chuangshiji/xml/csj.xml)  | 
-| <h2 id="IT团队博客">IT团队博客</h2> |  |   |  |
-| I001 | AlloyTeam | 腾讯全端AlloyTeam团队的技术博客 | {{latest_content}}  |  [订阅地址](http://www.alloyteam.com/feed/) | 
-| I002 | 奇舞周刊 | 360前端团队博客，领略前端技术，阅读奇舞周刊  | {{latest_content}}  |  [订阅地址](https://weekly.75.team/rss) | 
-| I004 | 淘系前端团队 | 淘宝团队技术博客 | {{latest_content}}  |  [订阅地址](https://fed.taobao.org/atom.xml) | 
-| I005 | 字节跳动团队技术博客 | 字节跳动团队技术博客 | {{latest_content}}  |  [订阅地址](https://blog.csdn.net/ByteDanceTech/rss/list) | 
-| I006 | 美团技术团队博客 | 美团技术团队博客 | {{latest_content}}  |  [订阅地址](https://tech.meituan.com/feed/)  | 
-| I007 | 云音乐大前端专栏 | 网易云音乐大前端专栏 | {{latest_content}}  |  [订阅地址](https://musicfe.dev/rss)  | 
-| I008 | 百度 FEX 团队 | FEX 技术周刊 | {{latest_content}}  |  [订阅地址](https://fex.baidu.com/feed.xml)  | 
-| I009 | JDC  | 京东设计中心 | {{latest_content}}  |  [订阅地址](https://jdc.jd.com/feed)  | 
-| I010 | 凹凸实验室  | 凹凸技术揭秘 · 技术精进与业务发展两不误 | {{latest_content}}  |  [订阅地址](https://aotu.io/atom.xml)  | 
-| <h2 id="公司官方新闻">公司官方新闻</h2> |  |   |  |
-| C001 | Apple新闻 | Apple官方消息 | {{latest_content}}  |  [订阅地址](https://www.apple.com/newsroom/rss-feed.rss) |  
 | <h2 id="互联网类">互联网类</h2> |  |   |  |
 | H001 | 虎嗅 | 虎嗅网新闻 | {{latest_content}}  |  [订阅地址](https://www.huxiu.com/rss/0.xml) |  
 | H002 | 36kr | 36氪 | {{latest_content}}  |  [订阅地址](https://www.36kr.com/feed) |  
@@ -107,11 +85,6 @@
 | <h2 id="学习类">学习类</h2> |  |   |  |
 | L001 | 扔物线 | 帮助 Android 工程师进阶成长 | {{latest_content}}  |  [订阅地址](https://rengwuxian.com/feed) |  
 | L002 | MOOC中国 | 慕课改变你，你改变世界  | {{latest_content}}  |  [订阅地址](https://www.mooc.cn/feed) |  
-| <h2 id="学术类">学术类</h2> |  |   |  |
-| A001 | 青柠学术 | 每个科研小白都有成为大神的潜力 | {{latest_content}}  |  [订阅地址](https://iseex.github.io/feed) |  
-| <h2 id="生活类">生活类</h2> |  |   |  |
-| L001 | 李子柒 | 李子柒的微博 | {{latest_content}}  |  [订阅地址](https://rsshub.app/weibo/user/2970452952) |  
-| L002 | 理想生活实验室 | 为更理想的生活 | {{latest_content}}  |  [订阅地址](https://www.toodaylab.com/rss) |  
 | <h2 id="设计类">设计类</h2> |  |   |  |
 | D001 | Behance |  Adobe旗下设计网站Behance | {{latest_content}}  |  [订阅地址](https://www.behance.net/feeds/projects) |  
 | D002 | Behance官方博客 |  Behance官方博客 | {{latest_content}}  |  [订阅地址](https://medium.com/feed/@behance) |  

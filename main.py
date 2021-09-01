@@ -39,12 +39,6 @@ def get_rss_info(feed_url, index, rss_info_list):
                     title = title.replace("\n", "")
                     title = title.replace("\r", "")
 
-                    title = title.replace("|", "\|")
-                    title = title.replace("[", "\[")
-                    title = title.replace("]", "\]")
-
-
-
                     result["result"].append({
                         "title": title,
                         "link": link,
@@ -102,7 +96,7 @@ def send_mail(email, title, contents):
     yag.send(email, title, contents)
 
 def replace_readme():
-    new_edit_readme_md = [""]
+    new_edit_readme_md = ["", ""]
     current_date_news_index = [""]
     
     # 读取EditREADME.md
@@ -119,13 +113,8 @@ def replace_readme():
         new_edit_readme_md[0] = new_edit_readme_md[0].replace("{{ga_rss_datetime}}", str(ga_rss_datetime))
 
         # 使用进程池进行数据获取，获得rss_info_list
-
-        
-
-        
         before_info_list_len = len(before_info_list)
         rss_info_list = Manager().list(range(before_info_list_len))
-        
         print('初始化完毕==》', rss_info_list)
 
         
@@ -162,15 +151,27 @@ def replace_readme():
                 for rss_info_atom in rss_info:
                     if (rss_info_atom["date"] == datetime.today().strftime("%Y-%m-%d")):
                         new_num = new_num + 1
-                        current_date_news_index[0] = current_date_news_index[0] + "<br/>"+ "🌈 " +"[" + "‣ " + rss_info_atom["title"] + " | 第" + str(new_num) +"篇"  +"](" + rss_info_atom["link"] +")"  
+                        if (new_num % 2) == 0:
+                            current_date_news_index[0] = current_date_news_index[0] + "<div style='line-height:3;' ><a href='" + rss_info_atom["link"] + "' " + 'style="line-height:2;text-decoration:none;display:block;color:#584D49;">' + "🌈 ‣ " + rss_info_atom["title"] + " | 第" + str(new_num) +"篇" + "</a></div>"
+                        else:
+                            current_date_news_index[0] = current_date_news_index[0] + "<div style='line-height:3;background-color:#FAF6EA;' ><a href='" + rss_info_atom["link"] + "' " + 'style="line-height:2;text-decoration:none;display:block;color:#584D49;">' + "🌈 ‣ " + rss_info_atom["title"] + " | 第" + str(new_num) +"篇" + "</a></div>"
+
             except:
                 print("An exception occurred")
+            
+
                 
             if(len(rss_info) > 0):
+                rss_info[0]["title"] = rss_info[0]["title"].replace("|", "\|")
+                rss_info[0]["title"] = rss_info[0]["title"].replace("[", "\[")
+                rss_info[0]["title"] = rss_info[0]["title"].replace("]", "\]")
 
                 latest_content = "[" + "‣ " + rss_info[0]["title"] + ( " 🌈 " + rss_info[0]["date"] if (rss_info[0]["date"] == datetime.today().strftime("%Y-%m-%d")) else " \| " + rss_info[0]["date"] ) +"](" + rss_info[0]["link"] +")"  
 
             if(len(rss_info) > 1):
+                rss_info[1]["title"] = rss_info[1]["title"].replace("|", "\|")
+                rss_info[1]["title"] = rss_info[1]["title"].replace("[", "\[")
+                rss_info[1]["title"] = rss_info[1]["title"].replace("]", "\]")
 
                 latest_content = latest_content + "<br/>[" + "‣ " +  rss_info[1]["title"] + ( " 🌈 " + rss_info[0]["date"] if (rss_info[0]["date"] == datetime.today().strftime("%Y-%m-%d")) else " \| " + rss_info[0]["date"] ) +"](" + rss_info[1]["link"] +")"
 
@@ -190,6 +191,11 @@ def replace_readme():
     # 将新内容
     with open(os.path.join(os.getcwd(),"README.md"),'w') as load_f:
         load_f.write(new_edit_readme_md[0])
+    
+
+    mail_re = r'邮件内容区开始>([.\S\s]*)<邮件内容区结束'
+    reResult = re.findall(mail_re, new_edit_readme_md[0])
+    new_edit_readme_md[1] = reResult
     
     return new_edit_readme_md
 
@@ -219,8 +225,14 @@ def main():
     cp_readme_md_to_docs()
     cp_media_to_docs()
     email_list = get_email_list()
+
+    mail_re = r'邮件内容区开始>([.\S\s]*)<邮件内容区结束'
+    reResult = re.findall(mail_re, readme_md[0])
+
+    # mail_content = markdown.markdown(reResult)
+
     try:
-        send_mail(email_list, "嘎!RSS订阅", content)
+        send_mail(email_list, "嘎!RSS订阅", reResult)
     except Exception as e:
         print("==邮件设信息置错误===》》", e)
 

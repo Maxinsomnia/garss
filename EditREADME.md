@@ -1,6 +1,7 @@
 ## 新{{new_num}}文章--生产时间 {{ga_rss_datetime}} 保质期24小时
-
 {{news}}
+
+<邮件内容区结束
 
 ## 已收集RSS列表
 | 编号 | 名称 | 描述 | RSS  |  最新内容 |
@@ -100,6 +101,7 @@
 | <div id="B084" style="text-align: center;"><img src="./_media/favicon/B084.png" width="30px" style="width:30px;height: auto;"/><br><span>B084</span></div> | 折影轻梦 | 崇尚自由、热爱科学与艺术 | {{latest_content}} | [订阅地址](https://nexmoe.com/atom.xml) |
 | <div id="B085" style="text-align: center;"><img src="./_media/favicon/B085.png" width="30px" style="width:30px;height: auto;"/><br><span>B085</span></div> | 不羁阁 | 行走少年郎 不羁，谓才行高远，不可羁系也 | {{latest_content}} | [订阅地址](https://bujige.net/atom.xml) |
 | <div id="B086" style="text-align: center;"><img src="./_media/favicon/B086.png" width="30px" style="width:30px;height: auto;"/><br><span>B086</span></div> | Cal Paterson | Cal Paterson's articles | {{latest_content}} | [订阅地址](https://calpaterson.com/calpaterson.rss) |
+| B087 | 3号实验室 | 树莓派; 开发板; 编程; 折腾 | {{latest_content}} | [订阅地址](https://www.labno3.com/feed/) |
 | <h2 id="数码">数码</h2> |  |   |  |
 | D001 | 少数派 | 少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质 | {{latest_content}}  |  [订阅地址](https://sspai.com/feed) | 
 | D002 | 数字尾巴 | 分享美好数字生活 | {{latest_content}}  |  [订阅地址](https://www.dgtle.com/rss/dgtle.xml) | 
@@ -180,4 +182,6 @@
 | <h2 id="资源类">资源类</h2> |  |   |  |
 | <div id="R001" style="text-align: center;"><img src="./_media/favicon/R001.png" width="30px" style="width:30px;height: auto;"/><br><span>R001</span></div> | 书格 |  有品格的数字古籍图书馆 | {{latest_content}}  |  [订阅地址](https://www.shuge.org/feed/) |  
 | R002 | 书伴 |  为静心阅读而生 | {{latest_content}}  |  [订阅地址](https://feeds.feedburner.com/bookfere) |  
+| R003 | kindle吧 |  海量书单阅读分享者 | {{latest_content}}  |  [订阅地址](https://www.kindle8.cc/feed) |  
+=======
 | R003 | kindle吧 |  海量书单阅读分享者 | {{latest_content}}  |  [订阅地址](https://www.kindle8.cc/feed) |  

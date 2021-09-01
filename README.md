@@ -180,13 +180,10 @@
 | R003 | kindle吧 |  海量书单阅读分享者 | [‣ 《白色巨塔》\[七册\]山崎丰子/当之无愧的日本社会派巨匠/epub+mobi+azw3 Kindle版+多看精排版下载 \| 2021-06-14](https://www.kindle8.cc/wxxs/35650.html)<br/>[‣ 《鞋带》斯塔尔诺内/暴露婚姻生活压抑疼痛直击生活痛点/epub+mobi+azw3 \| 2021-06-14](https://www.kindle8.cc/wxxs/35628.html)  |  [订阅地址](https://www.kindle8.cc/feed) |  
 
 
-
 ## 如何定制自己的私人简报?
-
 从 github.com/zhaoolee/garss.git 仓库, fork一份程序到自己的仓库
 
 允许运行actions
-
 ![允许运行actions](https://cdn.fangyuanxiaozhan.com/assets/1630216112533FANcC1QY.jpeg)
 
 在EditREADME.md中, 展示了zhaoolee已收集的RSS列表, 你可以参考每行的格式, 按行增删自己订阅的RSS
